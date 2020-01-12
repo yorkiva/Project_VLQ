@@ -5,8 +5,12 @@ Code and Setup for Determining Correction factor for cross-section calculation w
 3. Run MadGraph to generate process from the one of the process cards inside the Proc_Cards/ directory
 4. Change the MadGraph directory name inside the .py scripts (currently hardcoded!)
 5. Run the follwoing command to generate events for a given process:
+   ```
    	   mkdir Data
    	   python processrunner.py <process_name>
+	```
 6. Step 5 may take a while (10-12 hours)! After that run the following command to obtain the parameterized correction factors
+   ```
    		mkdir Figures2
    		python PNWAEstimator_All.py <process_name>
+	```
